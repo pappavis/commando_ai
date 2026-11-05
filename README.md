@@ -14,6 +14,8 @@ In 1985 het Capcom die arkadespeletjie *Commando* vrygestel. Elite Systems het d
 
 Hierdie projek is 'n getroue, bewysgedrewe rekonstruksie van daardie oorspronklike C64-meesterstuk, direk ontleed uit die amptelike skyfbeeld (`Commando.d64`) en gemodelleer in suiwer, moderne Python sonder 'n generiese emulator.
 
+<img src="https://github.com/pappavis/commando_ai/blob/main/img/Startscherm.png?raw=true" width="40%" height="40%">
+
 ---
 
 ## 2. INGENIEURSBAGINSELS & ARGITEKTUUR
@@ -136,3 +138,6 @@ commando_ai/
 
 ---
 *Projek RETRORECON — Bewysgedrewe C64 Erfenisbewaring in Python.*
+
+Deur: Michiel Erasmus met Codex
+
