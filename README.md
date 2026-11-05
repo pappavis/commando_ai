@@ -8,6 +8,10 @@
 
 ---
 
+<img src="https://github.com/pappavis/commando_ai/blob/main/img/RetroRekon_%20’n%20AI-speletjieherbouing.png?raw=true" width="80%" height="80%">
+
+---
+
 ## 1. OORSIG & GESKIEDENIS
 
 In 1985 het Capcom die arkadespeletjie *Commando* vrygestel. Elite Systems het die tuisrekenaarregte verkry en die legendariese programmeerder **Chris Butler** opdrag gegee om die Commodore 64-weergawe te skep. Binne 'n paar maande het Butler, saam met kunstenaars **Rory Green & Chris Harvey** en musiekpionier **Rob Hubbard**, een van die mees ikoniese en tegnies indrukwekkendste speletjies in die geskiedenis van die C64 geskep.
