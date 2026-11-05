@@ -24,4 +24,6 @@ Sjablone is invulbare kontrakte. UNKNOWN is doelbewus; dit is nie ’n bevinding
 - [Vaardigheids- en gereedskapregister](skills-and-tools.md)
 - [Werkpakket en TDD-rekord](work-package.md)
 
+[Ongepende toetsvereistes](requirements-dev.txt) is ’n opstel-sjabloon, nie ’n volledige produksie-afhanklikheidslys nie.
+
 Die generator gebruik ook [D00](d00.md), [D01](d01.md), [D02](d02.md) en [meesterprompt](masterprompt.md).

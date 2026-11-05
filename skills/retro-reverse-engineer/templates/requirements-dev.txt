@@ -1,0 +1,2 @@
+# Toetsafhanklikheid sonder vaste weergawe; sjabloon, nie spelafhanklikheidsinventaris nie.
+pytest

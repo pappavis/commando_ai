@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.15, pytest-8.4.1, pluggy-1.6.0 -- /Volumes/data1/michiele/venv/venv3.12/bin/python3
+rootdir: /private/tmp/retro-skill-v011/retro-reverse-engineer/tests
+plugins: langsmith-0.4.6, docker-3.2.3, mock-3.14.1, ddtrace-3.10.2, typeguard-4.4.4, hydra-core-1.3.2, anyio-4.15.1
+collecting ... collected 10 items
+
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_compiled_profile_links_resolve PASSED [ 10%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_empty_documents_has_explicit_missing_basis PASSED [ 20%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_existing_output_never_overwritten PASSED [ 30%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_invalid_conflict_rejected PASSED [ 40%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_literal_template_like_input_is_preserved PASSED [ 50%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_missing_document_produces_no_output PASSED [ 60%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_missing_profile_produces_no_output PASSED [ 70%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_no_conflicts_is_not_auto_approval PASSED [ 80%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_output_symlink_rejected PASSED [ 90%]
+../../../../../private/tmp/retro-skill-v011/retro-reverse-engineer/tests/test_generator.py::GeneratorTests::test_preserves_sources_and_open_conflicts PASSED [100%]
+
+============================== 10 passed in 0.09s ==============================

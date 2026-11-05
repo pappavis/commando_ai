@@ -1,6 +1,6 @@
 # Dokumentkonflikregister — plaaslike Commando-basis
 
-Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Status: alle onderstaande items OPEN; geen bestaande docs is versoen of gewysig nie. Erns geld vir toekomstige afhanklike spelwerk, nie vir die gemagtigde skep van hierdie hersieningspakket nie.
+Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Oorspronklike status in v0.1.0: alle items OPEN. Huidige status: CON-02 en CON-03 het eienaarsbesluite; CON-08 se padbeleid is besluit, maar praktiese oordraagbaarheid bly oop. Die ander items bly OPEN; bestaande docs is nie gewysig nie. Erns geld vir toekomstige afhanklike spelwerk, nie vir die gemagtigde skep van hierdie hersieningspakket nie.
 
 ## CON-01 — Weergaweverskil
 
@@ -18,7 +18,8 @@ Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Status: alle onderstaande items
 - Verskil: BOOTSTRAP verbied eksterne pip-afhanklikhede; D00/D01 laat ondersteunende biblioteke toe en D01 verkies pytest.
 - Erns: HOOG. Geraakte werk: Afhanklikheidskeuse en installasie.
 - Voorstel, nog nie besluit nie: Laat die eienaar die projekbeleid kies; geen installasie volg uit hierdie pakket nie.
-- Besluitnemer: Projekteienaar. Besluit-ID: PENDING. Status: OPEN.
+- Besluitnemer: Projekteienaar. Besluit-ID: DEC-20261105-01, 2026-11-05. Status: BESLUIT GENEEM — eksterne ongepende pakkette en outomatiese opstel toegelaat; dokumentaanpassing nog uitstaande.
+- Huidige besluit en omvang: sien [eienaarsbesluite](owner-decisions.md). Die voorstel hierbo is die historiese v0.1.0-voorstel.
 
 ## CON-03 — Argitektuurspanning
 
@@ -27,7 +28,8 @@ Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Status: alle onderstaande items
 - Verskil: BOOTSTRAP begin met sound_effects.py én commando.py; D00/D01 vereis aanvanklik een produksiebronlêer tensy ’n uitsondering goedgekeur is. Geen sodanige besluit in die geleeste docs geïdentifiseer nie.
 - Erns: HOOG. Geraakte werk: Produksielêerstruktuur.
 - Voorstel, nog nie besluit nie: Soek die bestaande uitsonderingsbesluit of laat ’n konkrete uitsondering beoordeel.
-- Besluitnemer: Projekteienaar. Besluit-ID: PENDING. Status: OPEN.
+- Besluitnemer: Projekteienaar. Besluit-ID: DEC-20261105-02, 2026-11-05. Status: BESLUIT GENEEM — huidige afsonderlike oudiolêer toegelaat; verdere uitsonderings apart.
+- Huidige besluit en omvang: sien [eienaarsbesluite](owner-decisions.md). Die voorstel hierbo is die historiese v0.1.0-voorstel.
 
 ## CON-04 — Bewysgaping / statusverskil
 
@@ -72,7 +74,8 @@ Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Status: alle onderstaande items
 - Verskil: BOOTSTRAP vereis ’n spesifieke Mac-tolkpad, afplay en ’n historiese BypassSandbox-vlag. Hierdie vereistes is nie universeel of as huidige vermoë bevestig nie.
 - Erns: MEDIUM. Geraakte werk: Uitvoeringsroete en oordraagbaarheid.
 - Voorstel, nog nie besluit nie: Behou dit as historiese Commando-konfigurasie; toets die werklike omgewing en gebruik huidige toegangsmeganismes.
-- Besluitnemer: Projekteienaar. Besluit-ID: PENDING. Status: OPEN.
+- Besluitnemer: Projekteienaar. Besluit-ID: DEC-20261105-03, 2026-11-05. Status: GEDEELTELIK BESLUIT — absolute paaie is voorbeelde; platformuitvoering en oudio-adapters nog ongetoets.
+- Huidige besluit en omvang: sien [eienaarsbesluite](owner-decisions.md). Die voorstel hierbo is die historiese v0.1.0-voorstel.
 
 ## CON-09 — Goedkeuringsstatus bots
 
@@ -112,4 +115,4 @@ Datum: 2026-11-05. Beoordeling: INTERNAL REVIEW. Status: alle onderstaande items
 
 ## Interpretasiegrense
 
-Hierdie is ’n dokumentbeoordeling. Geen aanspraak dat die spelkode verkeerd is of dat historiese bevindings vals is, word hiermee gemaak nie. Die ontbrekende bewys-/besluitketting moet nagegaan word voordat getrouheids- of goedkeuringsaansprake oorgedra word. Die gebruiker se huidige opdrag magtig die skill en ZIP; dit keur geen van hierdie konflikoplossings outomaties goed nie.
+Hierdie is ’n dokumentbeoordeling. Geen aanspraak dat die spelkode verkeerd is of dat historiese bevindings vals is, word hiermee gemaak nie. Die ontbrekende bewys-/besluitketting moet nagegaan word voordat getrouheids- of goedkeuringsaansprake oorgedra word. Die gebruiker se huidige opdrag magtig die skill en ZIP; die opvolg van 5 November keur slegs die bogenoemde afgebakende besluite goed. Spelbewyse bly oop.

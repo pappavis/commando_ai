@@ -12,6 +12,10 @@ Objekgeoriënteerde Python; aanvanklik een produksiebronlêer; toetse en hulpbro
 
 Plaas projeknaam, weergawe en vrystelling-ChatID in bronkoppe, ook in toets- en hulpmiddelkode waar toepaslik. Vertoon weergawe en ChatID in 'n gebruikerskoppelvlak; toets die sigbare waarde waar uitvoerbaar. Verwar die etiket nie met 'n outomaties geverifieerde gesprek-ID nie.
 
+## Afhanklikhede en omgewings
+
+Lees [die opstel- en verenigbaarheidskontrak](../references/dependencies-and-portability.md). Vir Commando is die huidige afsonderlike oudiolêer goedgekeur; verdere uitsonderings kry eie besluite. Kontroleer ongepende afhanklikhede en generiese paaie met werklike toetse en kodebeoordeling.
+
 ## RED
 
 Skryf 'n toets uit die vereiste en onafhanklike orakel. Gebruik 'n konkrete beginstaat en invoer. Voer dit uit; bewaar opdrag, omgewing, tyd, kodeweergawe en fout. Bevestig dat die fout die ontbrekende gedrag aantoon. 'n Sintaksisfout, ontbrekende pakket of verkeerde werkpad is nie die verlangde gedrags-RED nie; herstel eers die toetsomgewing.

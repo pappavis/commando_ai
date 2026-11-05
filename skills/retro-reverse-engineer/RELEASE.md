@@ -1,14 +1,17 @@
-# Vrystelling 0.1.0
+# Vrystelling 0.1.1
 
-Datum: 5 November 2026. Status: HERSIENINGSKANDIDAAT.
-Vrystelling-ChatID: **RRE-20261105-01**.
+Datum: 5 November 2026. Status: HERSIENINGSKANDIDAAT met afgebakende eienaarsbesluite.
+Vrystelling-ChatID: **RRE-20261105-02**. Vorige etiket: RRE-20261105-01 (v0.1.0).
 
-Hierdie ChatID is ’n doelbewus toegekende vrystellingsetiket; dit is nie ’n voorgewende stelselgegenereerde gesprek-ID nie. Vorige verwysingsgesprek: `6ac52048-7074-83eb-b4e5-6056d06ba0a9`.
+Die ChatID is ’n toegekende vrystellingsetiket, nie ’n stelselgegenereerde gesprek-ID nie. Vorige verwysingsgesprek: `6ac52048-7074-83eb-b4e5-6056d06ba0a9`.
 
-Eerste volledige pakket: metodologie, forensika, profiele, bewysregisters, F1–F5, TDD, differensiële toetsing, beginnerbegeleiding, D00/D01/D02-konsepte, konflikbeheer, fasehekke, Commando-geval en generator met toetse.
+## Veranderinge
 
-Die pakket mag hersien word; geen finale metodologie-, beginner- of spelgetrouheidsaanvaarding word hiermee beweer nie. Bekende historiese konflikte bly oop. Bestaande projekdocs en spelkode word nie deur hierdie vrystelling verander nie.
+- Eienaarsbesluite vir eksterne ongepende pakkette, outomatiese opstel van ontbrekende afhanklikhede, generiese paaie en die huidige afsonderlike oudiolêer aangeteken.
+- Konflikregister, Commando-profiel, generator-invoer en D01-samestelling bygewerk.
+- Uitvoerbare prosesvereistes vir opstel, verenigbaarheidstoetse en kodebeoordeling bygevoeg; geen onmoontlike toekomstige slaagwaarborg nie.
+- Geen spelinstalleerder gebou of spelafhanklikhede geïnstalleer nie; bestaande docs en spelkode bly onveranderd.
 
-Weergawebeleid: verhoog die hoofweergawe vir onverenigbare proses-/skemawysigings, kleiner weergawe vir nuwe versoenbare vermoëns, herstelweergawe vir regstellings. Hou bronhashes, toetsbewyse en konflikbesluite by elke nuwe vrystelling. Die huidige 0.1.0 dui op ’n vroeë hersieningskandidaat.
+Die oorspronkelijke v0.1.0-metodologie, forensika, profiele, F1–F5, TDD, sjablone en bewysreëls bly behoue. Historiese QA-logs bly by hul oorspronklike weergawe. Sien review/QA-v0.1.1.md vir hierdie wysiging.
 
-Die SHA256SUMS.json-manifest dek alle pakketlêers behalwe homself. Die ZIP se aparte .sha256-lêer identifiseer die presiese argief. Geen oorspronklike spel-, grafika- of oudiobates is ingesluit nie.
+SHA256SUMS.json dek pakketlêers behalwe homself. Die ZIP se aparte .sha256-lêer identifiseer die argief. Geen oorspronklike spelbates ingesluit nie. Praktiese beginner-, spelgetrouheids- en multiplatformvalidering bly uitstaande.

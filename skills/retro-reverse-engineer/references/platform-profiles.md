@@ -22,7 +22,7 @@ Vir Atari, MSX, 'n konsole of 'n onbekende platform: identifiseer eers die presi
 
 Vir 'n nuwe projek mag die eienaar 'n teikentaal en argitektuur kies. Stel die keuse uitdruklik in die spelprofiel vas. Platformonafhanklikheid beteken nie dat bestaande goedgekeurde taalvereistes verdwyn nie.
 
-Vir die huidige Commando-dokumentbasis is objekgeoriënteerde Python, aanvanklik een produksielêer en geen globale veranderbare speltoestand aangeteken. D00/D01 laat ondersteunende biblioteke toe, maar BOOTSTRAP beperk dit: die afhanklikheidsbeleid bly 'n oop konflik totdat 'n besluit bestaan. Geen outomatiese installasie of taalverandering volg uit hierdie skill nie.
+Vir die huidige Commando-dokumentbasis is objekgeoriënteerde Python, aanvanklik een produksielêer en geen globale veranderbare speltoestand aangeteken. Die eienaar het op 5 November 2026 eksterne ongepende afhanklikhede, outomatiese opstel van ontbrekende pakkette en die afsonderlike oudiolêer goedgekeur. Lees [afhanklikhede en draagbaarheid](../references/dependencies-and-portability.md). Geen taalverandering is hiermee goedgekeur nie.
 
 ## Moderne teiken en prestasie
 

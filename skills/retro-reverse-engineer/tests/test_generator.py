@@ -1,4 +1,4 @@
-# Retro-reverse-engineer | 0.1.0 | RRE-20261105-01
+# Retro-reverse-engineer | 0.1.1 | RRE-20261105-02
 """Gedragstoetse vir veilige konsepgenerering; geen spelgetrouheidstoetse nie."""
 import hashlib
 import importlib.util
@@ -16,7 +16,7 @@ class GeneratorTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.doc = self.root / 'D01.md'
         self.doc.write_text('Bestaande reël: een produksielêer.\n', encoding='utf-8')
-        self.config = {'project':'Proefspel', 'version':'0.1.0', 'release_chat_id':'PROEF-01',
+        self.config = {'project':'Proefspel', 'version':'0.1.1', 'release_chat_id':'PROEF-01',
           'game_profile':'Uitgawe UNKNOWN; teikentaal Python.',
           'platform_profile':'Platform UNKNOWN; geen tydstap bevestig nie.',
           'project_rules':['Behou die bestaande enkellêerreël.'],

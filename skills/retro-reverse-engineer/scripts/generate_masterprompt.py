@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Retro-reverse-engineer | 0.1.0 | RRE-20261105-01
+# Retro-reverse-engineer | 0.1.1 | RRE-20261105-02
 """Skep hersieningskonsepte in 'n nuwe gids; verander nooit brondokumente nie."""
 import argparse
 import hashlib
@@ -57,7 +57,7 @@ def generate(config_path, output):
         'CONFLICTS':conflict_text,'SOURCES':source_text}
     sections={
         'd00':['beginner-coaching.md','document-compatibility.md'],
-        'd01':['methodology.md','source-forensics.md','evidence-and-traceability.md','platform-profiles.md','architecture-and-tdd.md','differential-testing.md','quality-gates.md'],
+        'd01':['methodology.md','source-forensics.md','evidence-and-traceability.md','platform-profiles.md','dependencies-and-portability.md','architecture-and-tdd.md','differential-testing.md','quality-gates.md'],
         'd02':['functional-specification.md','fidelity-contract.md']}
     names={'d00':'D00_Bootstrap_masterprompt.md','d01':'D01_tech_Meesterprompt.md','d02':'D02_Functionele_specificaties.md'}
     files={'MASTERPROMPT.md':render((ROOT/'templates/masterprompt.md').read_text(encoding='utf-8'),values),

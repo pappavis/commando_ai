@@ -5,7 +5,7 @@ description: Ondersoek en rekonstrueer retrospeletjies met bronforensika, bewysn
 
 # Retro-reverse-engineer
 
-Weergawe: **0.1.0** · Vrystelling-ChatID: **RRE-20261105-01** · Status: **HERSIENINGSKANDIDAAT**
+Weergawe: **0.1.1** · Vrystelling-ChatID: **RRE-20261105-02** · Status: **HERSIENINGSKANDIDAAT**
 
 ## Opdrag en omvang
 
@@ -48,6 +48,10 @@ Aktiveer vir bronondersoek, rekonstruksie, getrouheidsbeoordeling, hervatting of
 | D00/D01/D02 opstel of hersien | [Meesterprompt-generator](references/masterprompt-generator.md), [sjablone](templates/README.md) |
 | Vrystelling en beoordeling | [Fasehekke](references/quality-gates.md), [vrystellingsbewyse](templates/release-evidence.md), [QA](tests/SCENARIOS.md) |
 | Voorbeeld of projekaanbieding | [Commando-geval](examples/commando-case-study.md), [aanbiedingsmetode](references/showcase.md) |
+
+## Besluite van 5 November 2026
+
+Lees [die eienaarsbesluite](review/owner-decisions.md) en [afhanklikhede en draagbaarheid](references/dependencies-and-portability.md) vir Commando: ongepende eksterne pakkette, outomatiese opstel van ontbrekende afhanklikhede, generiese paaie en die goedgekeurde afsonderlike oudiolêer. Die huidige besluit kry voorrang bo botsende historiese teks; bestaande docs bly onveranderd. Verdere uitsonderings kan later bygevoeg word.
 
 ## Implementeringskontrak
 

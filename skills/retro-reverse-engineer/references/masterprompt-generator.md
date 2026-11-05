@@ -4,7 +4,7 @@
 
 `scripts/generate_masterprompt.py` is ’n Python-standaardbiblioteekhulpmiddel. Dit skep ’n nuwe MASTERPROMPT, D00, D01 en D02, ’n broninventaris, konflikregister, ondersteunende verwysings en ’n hashmanifest in ’n nuwe gids. Alle dokumente bly hersieningskandidate. Dit voer geen spelkode uit en verander geen bestaande docs nie.
 
-Die generator kombineer drie lae: vaste metodologiekern, platformprofiel en spel-/projekprofiel. Die invoer bevat ook behoue projekreëls, bestaande dokumentweergawes, oop konflikte en projekspesifieke vereistes.
+Die generator kombineer drie lae: vaste metodologiekern, platformprofiel en spel-/projekprofiel. Die invoer bevat ook behoue projekreëls, bestaande dokumentweergawes, konflikte met huidige besluitstatus en projekspesifieke vereistes. Neem die eienaarsbesluitregister as dokumentbron op; die D01-uitset bevat die opstel- en draagbaarheidskontrak.
 
 ## Invoerprosedure
 
