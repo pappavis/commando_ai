@@ -1,0 +1,116 @@
+{
+  "project": "Commando — hersieningskonsep",
+  "version": "0.1.0",
+  "release_chat_id": "RRE-20261105-01",
+  "game_profile": "# Game Profile — Commando, plaaslike projek\n\nProfielweergawe: 0.1.0 · Datum: 2026-11-05 · Status: HERSIENINGSKANDIDAAT.\n\n- Werknaam: Commando; oorspronklike platform volgens projekdokumente: Commodore 64.\n- Presiese oorspronklike uitgawe, streek en binêre egtheid: UNKNOWN in hierdie skill-ondersoek.\n- Projek: `/Volumes/data1/AI_Gerelateerd/github/commando_ai`.\n- D00: v1.3, vrystellingskandidaat, `RRC-D00-13`.\n- D01: v1.2, REVIEW CANDIDATE, `D01-R12-A4F9C2E7`.\n- D02: v0.1; funksionele raamwerk met onbevestigde gedrag en CONDITIONAL GO.\n- BOOTSTRAP: praktiese roete, gedateer 24 Oktober 2026; verwys na D01 v1.1-RC.\n- Teiken: objekgeoriënteerde Python volgens D00/D01. Aanvanklik een produksiebronlêer; ander struktuur vereis besluit. Geen globale veranderbare speltoestand.\n- Moderne omgewing: huidige gebruiker se Mac; geen uitvoerbaarheid van die historiese Python-pad of spel in hierdie taak getoets nie.\n- Afhanklikhede: ONOPGELOS; D00/D01 laat ondersteuning toe, BOOTSTRAP verbied eksterne pip-pakkette.\n- F1–F5: metodologies vereis; geen nuwe spelmetings in hierdie pakket nie.\n- Gebruikersvlak: begeleiding in Afrikaans; werklike beginnerproef NOT TESTED.\n- Huidige gemagtigde omvang: skep skill en ZIP, lees dokumente, rapporteer konflikte; geen bestaande docs of spelkode verander nie.\n- Oop besluite: sien [konflikregister](../review/document-conflicts.md).\n\nDie historiese D64/PRG-groottes, hash, adresse, spelwaardes en musiekbeskrywings in BOOTSTRAP word nie hier as nuwe forensiese bevindings herhaal nie. Die gevallestudie verduidelik hoe om hulle te verifieer.\n",
+  "platform_profile": "# C64-ondersoekstarter\n\nStatus: ONDERSOEKLYS; geen binêre spelontleding in hierdie pakket uitgevoer nie.\n\nGebruik D01 §79.3 as plaaslike metodologiebron. Bevestig presiese model en PAL-/NTSC-variant, verwerker-/geheuemodel, bankwisseling, PRG-laaiadres, BASIC-aanvang, skyf-/bandlaaiketting en saamgeperste data. Ondersoek VIC-II, SID en CIA slegs vir die relevante gedrag.\n\nVrae: watter geheuegebied is aktief wanneer 'n sprite gelees word; hoe word invoer gemonster; wat dryf die spelopdatering; watter roetine skryf klankregisters; watter data kom eers later van die medium? Identifiseer die gereedskap en bewys dat dit die betrokke variant korrek kan ondersoek.\n\nGeen vaste 50 Hz, sprite-adres of SID-model word hier as geverifieerde speleienskap vasgestel nie. BOOTSTRAP se konkrete Commando-waardes is ondersoekleidrade; sien die konflikregister.\n",
+  "project_rules": [
+    "Objekgeoriënteerde Python volgens die bestaande D00/D01; geen taalverandering gemagtig nie.",
+    "Aanvanklik een produksiebronlêer; uitsondering vereis besluit.",
+    "Geen globale veranderbare speltoestand; toetse apart.",
+    "Weergawe en vrystelling-ChatID in kodekoppe en gebruikerskoppelvlak.",
+    "Geen bestaande docs of spelkode mag deur hierdie konsepgenerering verander word nie.",
+    "Afhanklikheidsbeleid en D01-goedkeuringsstatus is onopgelos; sien konflikte."
+  ],
+  "documents": [
+    {
+      "path": "../../../docs/D00_Bootstrap_masterprompt.md",
+      "label": "D00",
+      "version": "1.3",
+      "status": "Vrystellingskandidaat"
+    },
+    {
+      "path": "../../../docs/D01_tech_Meesterprompt.md",
+      "label": "D01",
+      "version": "1.2",
+      "status": "REVIEW CANDIDATE"
+    },
+    {
+      "path": "../../../docs/D02_Functionele_specificaties.md",
+      "label": "D02",
+      "version": "0.1",
+      "status": "DRAFT"
+    },
+    {
+      "path": "../../../docs/BOOTSTRAP.md",
+      "label": "BOOTSTRAP",
+      "version": "2026-10-24",
+      "status": "Praktiese historiese roete"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "CON-01",
+      "description": "BOOTSTRAP verwys na v1.1-RC; die plaaslike D01 is v1.2.",
+      "status": "OPEN",
+      "affected_work": "Tegniese dokumentbasis"
+    },
+    {
+      "id": "CON-02",
+      "description": "BOOTSTRAP verbied eksterne pip-afhanklikhede; D00/D01 laat ondersteunende biblioteke toe en D01 verkies pytest.",
+      "status": "OPEN",
+      "affected_work": "Afhanklikheidskeuse en installasie"
+    },
+    {
+      "id": "CON-03",
+      "description": "BOOTSTRAP begin met sound_effects.py én commando.py; D00/D01 vereis aanvanklik een produksiebronlêer tensy ’n uitsondering goedgekeur is. Geen sodanige besluit in die geleeste docs geïdentifiseer nie.",
+      "status": "OPEN",
+      "affected_work": "Produksielêerstruktuur"
+    },
+    {
+      "id": "CON-04",
+      "description": "BOOTSTRAP noem ’n cracktro en ’n outentieke D64-spelvrag; D02 hou bronvolledigheid en spelkode onbevestig. Dit kan latere kennis wees, maar gekoppelde rou bewyse is nie in hierdie taak geverifieer nie.",
+      "status": "OPEN",
+      "affected_work": "Bronvoldoendeheid en oorspronklikheidsaansprake"
+    },
+    {
+      "id": "CON-05",
+      "description": "BOOTSTRAP skryf konkrete spelwaardes, vlakke, bonusse en nuwe funksies voor terwyl D02 dieselfde domeine UNKNOWN hou.",
+      "status": "OPEN",
+      "affected_work": "Spelimplementering en F2/F3"
+    },
+    {
+      "id": "CON-06",
+      "description": "BOOTSTRAP stel ’n vaste tydstap; ander docs vereis bronmeting of ’n goedgekeurde ontwerpbesluit en hou tyd onbekend.",
+      "status": "OPEN",
+      "affected_work": "Spelklok en F4"
+    },
+    {
+      "id": "CON-07",
+      "description": "BOOTSTRAP beskryf sintese en presiese musiekkenmerke stellig; oorspronklike bron-/oudiovergelyking is nie in hierdie taak uitgevoer nie.",
+      "status": "OPEN",
+      "affected_work": "F5 en oudio-outentisiteit"
+    },
+    {
+      "id": "CON-08",
+      "description": "BOOTSTRAP vereis ’n spesifieke Mac-tolkpad, afplay en ’n historiese BypassSandbox-vlag. Hierdie vereistes is nie universeel of as huidige vermoë bevestig nie.",
+      "status": "OPEN",
+      "affected_work": "Uitvoeringsroete en oordraagbaarheid"
+    },
+    {
+      "id": "CON-09",
+      "description": "D02 beweer goedkeuring; D01 se eie status is ’n kandidaat. Die beslissende eienaarsrekord is nie in die geleeste dokumente geïdentifiseer nie.",
+      "status": "OPEN",
+      "affected_work": "Formele tegniese fase-oorgang"
+    },
+    {
+      "id": "CON-10",
+      "description": "Die gesprek verwys na ’n D02 v0.3 wat elders uitgewerk sou wees; daardie volledige artefak is nie in die beskikbare gesprekblad of projekdocs gevind nie.",
+      "status": "OPEN",
+      "affected_work": "Latere D02-vergelyking"
+    },
+    {
+      "id": "CON-11",
+      "description": "Die vaste openingsvraag vra na die bedryfstelsel, terwyl D00 ook sê bekende antwoorde moet nie herhaal word nie. Die huidige gebruiker het reeds Mac, projekpad en taak verskaf.",
+      "status": "OPEN",
+      "affected_work": "Aktivering en beginnergesprek"
+    },
+    {
+      "id": "CON-12",
+      "description": "Die bestaande metodologie se implementeringstaal is Python. Die nuwe skill laat ander tale vir nuwe projekte toe, maar dit mag nie die huidige Commando-kontrak stilweg vervang nie.",
+      "status": "OPEN",
+      "affected_work": "Profielkeuse en meesterprompt-generering"
+    }
+  ],
+  "requirements": "FR-GAME-001: oorspronklike spelbegin UNKNOWN. FR-PLAYER-001: oorspronklike beweging UNKNOWN. FR-AUDIO-001: oorspronklike oudiogetrouheid UNKNOWN. Alle ander D02-ondersoekonderwerpe bly van toepassing; hierdie konsep vervang nie die volledige bestaande D02-raamwerk nie. Geen produksie-implementering word hiermee goedgekeur nie."
+}

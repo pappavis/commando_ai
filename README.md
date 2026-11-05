@@ -8,7 +8,7 @@
 
 ---
 
-<img src="https://github.com/pappavis/commando_ai/blob/main/img/RetroRekon_%20’n%20AI-speletjieherbouing.png?raw=true" width="80%" height="80%">
+<img src="https://github.com/pappavis/commando_ai/blob/main/img/RetroRekon_%20’n%20AI-speletjieherbouing.jpg?raw=true" width="80%" height="80%">
 
 ---
 

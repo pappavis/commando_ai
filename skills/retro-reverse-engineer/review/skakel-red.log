@@ -1,0 +1,13 @@
+F.........
+======================================================================
+FAIL: test_compiled_profile_links_resolve (test_generator.GeneratorTests.test_compiled_profile_links_resolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 76, in test_compiled_profile_links_resolve
+    self.assertTrue((p.parent/link).exists(),(p.name,link))
+AssertionError: False is not true : ('D01_tech_Meesterprompt.md', '../review/document-conflicts.md')
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.201s
+
+FAILED (failures=1)

@@ -1,0 +1,103 @@
+FFFFFFFFF
+======================================================================
+FAIL: test_empty_documents_has_explicit_missing_basis (test_generator.GeneratorTests.test_empty_documents_has_explicit_missing_basis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 70, in test_empty_documents_has_explicit_missing_basis
+    self.config['documents']=[];self.save();self.run_generator()
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_existing_output_never_overwritten (test_generator.GeneratorTests.test_existing_output_never_overwritten)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 45, in test_existing_output_never_overwritten
+    with self.assertRaises(FileExistsError): self.run_generator(out)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_invalid_conflict_rejected (test_generator.GeneratorTests.test_invalid_conflict_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 61, in test_invalid_conflict_rejected
+    with self.assertRaises(ValueError): self.run_generator()
+                                        ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_literal_template_like_input_is_preserved (test_generator.GeneratorTests.test_literal_template_like_input_is_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 64, in test_literal_template_like_input_is_preserved
+    self.config['project']='Spel {{VERSION}}';self.save();self.run_generator()
+                                                          ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_missing_document_produces_no_output (test_generator.GeneratorTests.test_missing_document_produces_no_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 49, in test_missing_document_produces_no_output
+    with self.assertRaises(FileNotFoundError): self.run_generator()
+                                               ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_missing_profile_produces_no_output (test_generator.GeneratorTests.test_missing_profile_produces_no_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 53, in test_missing_profile_produces_no_output
+    with self.assertRaises(ValueError): self.run_generator()
+                                        ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_no_conflicts_is_not_auto_approval (test_generator.GeneratorTests.test_no_conflicts_is_not_auto_approval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 56, in test_no_conflicts_is_not_auto_approval
+    self.config['conflicts']=[];self.save();self.run_generator()
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_output_symlink_rejected (test_generator.GeneratorTests.test_output_symlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 68, in test_output_symlink_rejected
+    with self.assertRaises(FileExistsError):self.run_generator(out)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+======================================================================
+FAIL: test_preserves_sources_and_open_conflicts (test_generator.GeneratorTests.test_preserves_sources_and_open_conflicts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 37, in test_preserves_sources_and_open_conflicts
+    self.run_generator()
+  File "/private/tmp/retro-skill-build/retro-reverse-engineer/tests/test_generator.py", line 31, in run_generator
+    self.assertTrue(SCRIPT.is_file(), 'Die generator moet bestaan voordat uitvoer gelewer kan word.')
+AssertionError: False is not true : Die generator moet bestaan voordat uitvoer gelewer kan word.
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.005s
+
+FAILED (failures=9)
