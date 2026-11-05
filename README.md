@@ -142,10 +142,45 @@ commando_ai/
 
 ---
 
-## 7.  AI Agents soos Claude, gemini, codex ens.
+## 10. Test resultate
+
+```bash
+(venv3.12) michiele@KodeklopperM4.local commando_ai % pytest -v                                                                                    10:35:47
+=================================================================== test session starts ====================================================================
+platform darwin -- Python 3.12.15, pytest-8.4.1, pluggy-1.6.0 -- /Volumes/data1/michiele/venv/venv3.12/bin/python
+cachedir: .pytest_cache
+rootdir: /XXX/XXXX/XXXXXX/XXXXX/commando_ai
+plugins: langsmith-0.4.6, docker-3.2.3, mock-3.14.1, ddtrace-3.10.2, typeguard-4.4.4, hydra-core-1.3.2, anyio-4.15.1
+collected 19 items                                                                                                                                         
+
+tests/test_commando.py::TestCommandoInkrement2::test_config_manager_load_and_save PASSED                                                             [  5%]
+tests/test_commando.py::TestCommandoInkrement2::test_crouching_enemy_mechanic PASSED                                                                 [ 10%]
+tests/test_commando.py::TestCommandoInkrement2::test_demo_ai_controller PASSED                                                                       [ 15%]
+tests/test_commando.py::TestCommandoInkrement2::test_game_mode_title_and_demo_transition PASSED                                                      [ 21%]
+tests/test_commando.py::TestCommandoInkrement2::test_grenade_throw_and_area_damage PASSED                                                            [ 26%]
+tests/test_commando.py::TestCommandoInkrement2::test_high_score_manager PASSED                                                                       [ 31%]
+tests/test_commando.py::TestCommandoInkrement2::test_high_score_name_entry PASSED                                                                    [ 36%]
+tests/test_commando.py::TestCommandoInkrement2::test_hostage_friendly_fire PASSED                                                                    [ 42%]
+tests/test_commando.py::TestCommandoInkrement2::test_hostage_rescue_by_eliminating_guard PASSED                                                      [ 47%]
+tests/test_commando.py::TestCommandoInkrement2::test_obstacle_blocks_bullets PASSED                                                                  [ 52%]
+tests/test_commando.py::TestCommandoInkrement2::test_officer_runner_speed PASSED                                                                     [ 57%]
+tests/test_commando.py::TestCommandoInkrement2::test_player_8_way_directions PASSED                                                                  [ 63%]
+tests/test_commando.py::TestCommandoInkrement2::test_player_initial_state PASSED                                                                     [ 68%]
+tests/test_commando.py::TestCommandoInkrement2::test_rob_hubbard_highscore_synthesized PASSED                                                        [ 73%]
+tests/test_commando.py::TestCommandoInkrement2::test_rob_hubbard_theme_synthesized PASSED                                                            [ 78%]
+tests/test_commando.py::TestCommandoInkrement2::test_stage_3_and_victory PASSED                                                                      [ 84%]
+tests/test_commando.py::TestCommandoInkrement2::test_stage_progression_to_level_2 PASSED                                                             [ 89%]
+tests/test_commando.py::TestCommandoInkrement2::test_supply_crate_pickup PASSED                                                                      [ 94%]
+tests/test_commando.py::TestCommandoInkrement2::test_truck_troop_deployment PASSED                                                                   [100%]
+
+==================================================================== 19 passed in 0.23s ====================================================================
+(venv3.12) michiele@KodeklopperM4.local commando_ai %                                                                                              11:04:33
+```
+
+## 9.  AI Agents soos Claude, gemini, codex ens.
 Lees https://github.com/pappavis/commando_ai/edit/main/README.md#:~:text=BOOTSTRAP.md
 
-## 8. Voorbeeld
+## 10. Voorbeeld
 Die functionaliteit van Commando is nagemaakt, grafiek is dar nog veel te verbeteren.
 
 <img src="https://github.com/pappavis/commando_ai/blob/main/img/SpeelDemo01.png?raw=true" width="40%" height="40%">
