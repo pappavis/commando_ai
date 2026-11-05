@@ -139,5 +139,10 @@ commando_ai/
 ---
 *Projek RETRORECON — Bewysgedrewe C64 Erfenisbewaring in Python.*
 
+## 7.  AI Agents soos Claude, gemini, codex ens.
+Lees https://github.com/pappavis/commando_ai/edit/main/README.md#:~:text=BOOTSTRAP.md
+
+<img src="https://github.com/pappavis/commando_ai/blob/main/img/SpeelDemo01.png?raw=true" width="40%" height="40%">
+
 Deur: Michiel Erasmus met Codex
 
