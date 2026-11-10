@@ -36,14 +36,14 @@ class GeneratorTests(unittest.TestCase):
         before=self.doc.read_bytes()
         self.run_generator()
         self.assertEqual(before,self.doc.read_bytes())
-        self.assertIn('CON-01', (self.root/'konsep'/'D01_tech_Meesterprompt.md').read_text())
-        self.assertIn('OPEN',(self.root/'konsep'/'CONFLICTS.md').read_text())
-        self.assertIn(hashlib.sha256(before).hexdigest(),(self.root/'konsep'/'SOURCE_INVENTORY.md').read_text())
-        self.assertIn('HERSIENINGSKANDIDAAT',(self.root/'konsep'/'D02_Functionele_specificaties.md').read_text())
+        self.assertIn('CON-01', (self.root/'konsep'/'D01_tech_Meesterprompt.md').read_text(encoding="utf-8"))
+        self.assertIn('OPEN',(self.root/'konsep'/'CONFLICTS.md').read_text(encoding="utf-8"))
+        self.assertIn(hashlib.sha256(before).hexdigest(),(self.root/'konsep'/'SOURCE_INVENTORY.md').read_text(encoding="utf-8"))
+        self.assertIn('HERSIENINGSKANDIDAAT',(self.root/'konsep'/'D02_Functionele_specificaties.md').read_text(encoding="utf-8"))
     def test_existing_output_never_overwritten(self):
         out=self.root/'konsep';out.mkdir();sentinel=out/'behou.txt';sentinel.write_text('behou')
         with self.assertRaises(FileExistsError): self.run_generator(out)
-        self.assertEqual(sentinel.read_text(),'behou')
+        self.assertEqual(sentinel.read_text(encoding="utf-8"),'behou')
     def test_missing_document_produces_no_output(self):
         self.doc.unlink()
         with self.assertRaises(FileNotFoundError): self.run_generator()
@@ -54,7 +54,7 @@ class GeneratorTests(unittest.TestCase):
         self.assertFalse((self.root/'konsep').exists())
     def test_no_conflicts_is_not_auto_approval(self):
         self.config['conflicts']=[];self.save();self.run_generator()
-        s=(self.root/'konsep'/'CONFLICTS.md').read_text()
+        s=(self.root/'konsep'/'CONFLICTS.md').read_text(encoding="utf-8")
         self.assertIn('NIE OUTOMATIES BEVESTIG NIE',s)
     def test_invalid_conflict_rejected(self):
         self.config['conflicts']=[{'id':'CON-01'}];self.save()
@@ -62,21 +62,30 @@ class GeneratorTests(unittest.TestCase):
         self.assertFalse((self.root/'konsep').exists())
     def test_literal_template_like_input_is_preserved(self):
         self.config['project']='Spel {{VERSION}}';self.save();self.run_generator()
-        self.assertIn('Spel {{VERSION}}',(self.root/'konsep'/'MASTERPROMPT.md').read_text())
+        self.assertIn('Spel {{VERSION}}',(self.root/'konsep'/'MASTERPROMPT.md').read_text(encoding="utf-8"))
     def test_output_symlink_rejected(self):
-        out=self.root/'konsep';out.symlink_to(self.root/'ontbreek')
+        out = self.root / 'konsep'
+        try:
+            out.symlink_to(self.root / 'ontbreek')
+        except OSError as exc:
+            if getattr(exc, "winerror", None) == 1314:
+                self.skipTest(
+                    "Windows symbolic-link privilege is unavailable. "
+                    "Enable Developer Mode or run with suitable privileges."
+                )
+            raise
         with self.assertRaises(FileExistsError):self.run_generator(out)
     def test_compiled_profile_links_resolve(self):
         self.config['game_profile']='Sien [konflikte](../review/document-conflicts.md).';self.save();self.run_generator()
         import re
         out=self.root/'konsep'
         for p in out.glob('*.md'):
-            for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
+            for link in re.findall(r'\]\(([^)]+)\)',p.read_text(encoding="utf-8")):
                 if ':' not in link and not link.startswith('#'):
                     self.assertTrue((p.parent/link).exists(),(p.name,link))
 
     def test_empty_documents_has_explicit_missing_basis(self):
         self.config['documents']=[];self.save();self.run_generator()
-        self.assertIn('ONTBREEK',(self.root/'konsep'/'SOURCE_INVENTORY.md').read_text())
+        self.assertIn('ONTBREEK',(self.root/'konsep'/'SOURCE_INVENTORY.md').read_text(encoding="utf-8"))
 
 if __name__=='__main__': unittest.main()
